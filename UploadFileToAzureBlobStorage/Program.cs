@@ -1,12 +1,11 @@
 ﻿using System;
-
 namespace UploadFileToAzureBlobStorage
 {
     class Program
     {
         static void Main(string[] args)
         {
-
+            // TODO: Don't forget to config appSetting.json file
             // TODO: Use this one if you want to upload multiple files at once
             //var files = FileHelper.Files;
             // TODO: Prints all the file names you have in the directory
@@ -25,6 +24,5 @@ namespace UploadFileToAzureBlobStorage
                 Console.WriteLine("Uploaded.");
             }
         }
-
     }
 }

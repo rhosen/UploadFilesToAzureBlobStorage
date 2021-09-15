@@ -26,7 +26,6 @@ namespace UploadFileToAzureBlobStorage
             return DirectoryInfo.GetFiles();
         }
 
-
         public static FileInfo GetFile(string fileName)
         {
             return DirectoryInfo.GetFiles().FirstOrDefault(x=> x.FullName == fileName);
@@ -50,7 +49,7 @@ namespace UploadFileToAzureBlobStorage
             ConfigurationBuilder.AddJsonFile(AppSettingPath, false);
             return ConfigurationBuilder.Build().GetSection("Container").Value;
         }
-
+        
         public static void PrintFileNames(FileInfo[] files)
         {
             Console.WriteLine($"Printing all file names in: [{DirectoryInfo}]");
