@@ -12,8 +12,6 @@ namespace UploadFileToAzureBlobStorage
         Task<BlobContentInfo> Upload(FileInfo file, bool deleteFile);
         Task<Azure.Response> Download(string filePath, string destinationPath);
         Task<bool> Delete(string filePath);
-
-
-
+        Task<List<string>> GetAll();
     }
 }
